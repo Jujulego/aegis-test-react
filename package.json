@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@jujulego/aegis": "^1.0.0-alpha.2",
+    "@jujulego/aegis": "^1.0.0-alpha.3",
     "@jujulego/aegis-api": "^1.0.0-alpha.2",
-    "@jujulego/aegis-react": "^1.0.0-alpha.7",
+    "@jujulego/aegis-react": "^1.0.0-alpha.8",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
