@@ -10,6 +10,8 @@ export interface IQuote {
 
 // Entity
 export const $Quotes = $entity('Quotes', $store.memory(), (quote: IQuote) => quote.quote)
-  .$queryList('random', $api.get`https://animechan.vercel.app/api/quotes`)
-  .$queryList('byAnime', $api.get`https://animechan.vercel.app/api/quotes/anime?title=${'title'}`)
-  .$queryList('byCharacter', $api.get`https://animechan.vercel.app/api/quotes/character?name=${'name'}`);
+  .$protocol(({ $list }) => ({
+    random: $list.query($api.get`https://animechan.vercel.app/api/quotes`),
+    byAnime: $list.query($api.get`https://animechan.vercel.app/api/quotes/anime?title=${'title'}`, 'replace'),
+    byCharacter: $list.query($api.get`https://animechan.vercel.app/api/quotes/character?name=${'name'}`)
+  }));
