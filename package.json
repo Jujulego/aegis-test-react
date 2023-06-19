@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@jujulego/aegis": "1.0.0-rc",
-    "@jujulego/aegis-api": "1.0.0-rc",
+    "@jujulego/aegis-api": "1.0.0-rc.7",
     "@jujulego/aegis-react": "1.0.0-rc",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
